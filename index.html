@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Page Title -->
+  <title>SMD Group</title>
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="BMC Employee Solution" />
+  <meta property="og:description" content="Explore powerful financial calculators for salary, pension, and retirement." />
+  <meta property="og:image" content="https://prajwalrodrix.github.io/BMC/images/website.png" />
+  <meta property="og:url" content="https://prajwalrodrix.github.io/BMC/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SMD Group" />
+  <meta name="twitter:description" content="Explore powerful financial calculators for salary, pension, and retirement." />
+  <meta name="twitter:image" content="https://prajwalrodrix.github.io/BMC/images/website.png" />
+<!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore powerful and easy-to-use financial calculators to manage your salary, pension, and retirement planning with confidence.">
+  <meta name="keywords" content="salary calculator, pension calculator, financial tools, retirement planning, DA calculator, BMC salary">
+  <meta name="author" content="SMD Group">
+
+  <!-- Favicon (Optional) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papYFvJGoUk5ZBZ3/NkIbI3HME7sx8zPtynOh1P43FeZxPLDRyQ6sAzcY7rMlTKTZVnmpbbJf41Q3NloQW8x4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Fonts (Optional: Inter or Segoe UI via Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Optional: Normalize or Reset CSS -->
+  <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+
+  <!-- Theme Color (for mobile browser UI color) -->
+  <meta name="theme-color" content="#1b5e20">
+</head>
+
+<body>
+<nav class="navbar-wrapper">
+<h1 class="logo">
+  <a href="./index.html">
+    <img src="./images/logo.svg" alt="SMD Logo" class="logo-icon" />
+  </a>
+</h1>
+
+
+
+  <input type="checkbox" id="menuToggle" hidden />
+
+  <label for="menuToggle" class="menu-btn">
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+  </label>
+
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#recent">Recent Project</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="blur-overlay"></div>
+</nav>
+
+<script>
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('menuToggle').checked = false;
+    });
+  });
+</script>
+
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Transforming Ideas into Functional Spaces</h1>
+    <p>We specialize in modular furniture, structures, civil work, and brand-led interiors — delivering complete turnkey solutions tailored to your vision.</p>
+    <a href="#contact" class="hero-btn">Get Started</a>
+  </div>
+</section>
+
+
+
+<section class="ideas-section clean" id="recent">
+  <h2 data-aos="fade-up">Recent Project</h2>
+
+  <div class="scroll-wrapper">
+    <!-- Scroll Button - Left -->
+    <button class="scroll-btn left" onclick="scrollLeft()" aria-label="Scroll Left">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <!-- Scrollable Card Container -->
+    <div class="card-container" id="cardContainerClean">
+      <div class="card" data-aos="fade-up">
+        <img src="images/project1_1.jpg" alt="Project" />
+        <div class="overlay">
+          <h3>Elegant Design</h3>
+          <p>Functional + Minimal</p>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <img src="images/project1_2.jpg" alt="Project" />
+        <div class="overlay">
+          <h3>Elegant Design</h3>
+          <p>Functional + Minimal</p>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <img src="images/project1_3.jpg" alt="Project" />
+        <div class="overlay">
+          <h3>Elegant Design</h3>
+          <p>Functional + Minimal</p>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <img src="images/project1_4.jpg" alt="Project" />
+        <div class="overlay">
+          <h3>Elegant Design</h3>
+          <p>Functional + Minimal</p>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <img src="images/project1_1.jpg" alt="Project" />
+        <div class="overlay">
+          <h3>Elegant Design</h3>
+          <p>Functional + Minimal</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Button - Right -->
+    <button class="scroll-btn right" onclick="scrollRight()" aria-label="Scroll Right">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+
+<!-- Scroll Button Logic -->
+<script>
+  function scrollLeft() {
+    document.getElementById("cardContainerClean").scrollBy({ left: -320, behavior: 'smooth' });
+  }
+
+  function scrollRight() {
+    document.getElementById("cardContainerClean").scrollBy({ left: 320, behavior: 'smooth' });
+  }
+</script>
+
+
+
+
+
+
+
+ <section class="services-section" id="services">
+    <div class="section-header" data-aos="fade-up">
+      <h2><span>OUR</span> SERVICES</h2>
+      <p>
+        Being part of many <span class="highlight">Best Interior designer in Mumbai</span>,
+        we have always stood apart due to our hassle-free project deliveries and an eye for detail.
+        A well-designed interior adds personality to your home — unlike generic spaces.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service Card -->
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/drawings.jpeg" alt="Designs & Drawings" />
+        <div class="card-info">
+          <h3>Designs & Drawings</h3>
+          <span class="index">01</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/furniture.jpeg" alt="Modular Furniture" />
+        <div class="card-info">
+          <h3>Furniture & Fit-outs</h3>
+          <span class="index">02</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="images/structure.jpeg" alt="Facades & Structure" />
+        <div class="card-info">
+          <h3>Facades & Structure</h3>
+          <span class="index">03</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="images/civil.png" alt="Civil and Electrical" />
+        <div class="card-info">
+          <h3>Civil and Electrical</h3>
+          <span class="index">04</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+        <img src="images/Interiors.jpeg" alt="Turnkey Solutions" />
+        <div class="card-info">
+          <h3>Complete Turnkey Solutions</h3>
+          <span class="index">05</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+        <img src="images/model.jpeg" alt="Brand Communications" />
+        <div class="card-info">
+          <h3>Renovation & Remodeling</h3>
+          <span class="index">06</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+
+<section id="contact" class="contact-section">
+  <div class="contact-card">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Let us know how we can help you. We typically respond within 24 hours.</p>
+    </div>
+
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder=" " />
+        <label for="name">Full Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder=" " />
+        <label for="email">Email</label>
+      </div>
+
+      <div class="form-group">
+        <input type="tel" id="phone" name="phone" placeholder=" " />
+        <label for="phone">Phone</label>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+        <label for="message">Message</label>
+      </div>
+
+      <button type="submit" id="submitBtn">Send Message</button>
+      <div class="loading" id="loadingMsg" style="display: none;">Sending...</div>
+      <p id="responseMsg"></p>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Optional form handler
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const loadingMsg = document.getElementById('loadingMsg');
+    const responseMsg = document.getElementById('responseMsg');
+
+    loadingMsg.style.display = 'block';
+    responseMsg.textContent = '';
+
+    // Simulate sending
+    setTimeout(() => {
+      loadingMsg.style.display = 'none';
+      responseMsg.textContent = 'Your message has been sent!';
+      this.reset();
+    }, 1500);
+  });
+</script>
+
+
+
+
+
+
+
+
+<footer class="pro-footer">
+  <div class="footer-container">
+    <!-- Column 1: Branding -->
+    <!-- Column 1: Branding -->
+    <div class="footer-column brand">
+      <img src="images/logo.svg" alt="BMC Employee Solution Logo" class="footer-logo" />
+      <p>Offering expert services in furniture, facades, civil-electrical, and remodeling — all under one roof for seamless project delivery.</p>
+    </div>
+
+    <!-- Column 2: Navigation -->
+    <div class="footer-column links">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#recent">Recent Project</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact -->
+    <div class="footer-column contact">
+      <h3>Contact</h3>
+      <ul>
+        <li><i class="fas fa-envelope"></i> info@smdgroup.com</li>
+        <li><i class="fas fa-phone-alt"></i> +91-12345-67890</li>
+        <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Social Only -->
+    <div class="footer-column social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 SMD Group. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
