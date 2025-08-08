@@ -707,6 +707,77 @@ body {
 
 
 
+.parallax-wrapper {
+  position: relative;
+  height: 50vh;
+  background-image: url('./images/bed.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.parallax-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.parallax-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.parallax-content p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+  .parallax-content h1 {
+    font-size: 2rem;
+  }
+  .parallax-content p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
 .pro-footer {
   background-color: #1c1c1c;
   color: #fff;
@@ -803,4 +874,5 @@ body {
   height: auto;
   margin-bottom: 10px;
 }
+
 
